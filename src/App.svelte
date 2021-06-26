@@ -1,10 +1,20 @@
 <script>
-	export let name;
+
+const test = {
+	id: 123,
+	firstName: 'Alessandro'
+}
+
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<nav>
+		Soy un navbar
+	</nav>
+	<h1>Hello {test.firstName}!</h1>
+	<footer>
+		Soy un footer
+	</footer>
 </main>
 
 <style>
@@ -16,7 +26,7 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: #00ff0d;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
@@ -27,4 +37,7 @@
 			max-width: none;
 		}
 	}
+
+
+	
 </style>
