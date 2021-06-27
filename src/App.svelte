@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { Router, Route } from "svelte-navigator";
   import Nav from "./components/Nav.svelte";
   import Login from "./pages/Login.svelte";
