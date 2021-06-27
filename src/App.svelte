@@ -1,43 +1,17 @@
 <script>
-
-const test = {
-	id: 123,
-	firstName: 'Alessandro'
-}
-
+  import { Router, Route } from "svelte-navigator";
+  import Nav from "./components/Nav.svelte";
+  import Login from "./pages/Login.svelte";
+  import Footer from "./components/Footer.svelte";
 </script>
 
-<main>
-	<nav>
-		Soy un navbar
-	</nav>
-	<h1>Hello {test.firstName}!</h1>
-	<footer>
-		Soy un footer
-	</footer>
-</main>
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #00ff0d;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-
-
-	
-</style>
+<Router>
+  <Nav/>
+  <main>
+    <Route path='login'>
+      <Login/>
+    </Route>
+  </main>
+  <Footer/>
+</Router>
