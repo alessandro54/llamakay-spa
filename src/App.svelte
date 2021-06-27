@@ -1,8 +1,11 @@
 <script lang="ts">
-  import Layout from "./Layout.svelte";
-  import Router from "./Router.svelte";
+  import Router from "./components/Router.svelte";
 </script>
 
-<Layout>
-  <Router/>
-</Layout>
+<Router/>
+
+<style global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+</style>
