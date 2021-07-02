@@ -12,7 +12,14 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        nav: '5vh',
+        body: '95vh',
+        smnav: '8vh',
+        smbody: '92vh'
+      }
+    },
   },
   variants: {
     extend: {},
