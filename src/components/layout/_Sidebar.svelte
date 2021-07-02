@@ -5,7 +5,7 @@
   import FaUser from 'svelte-icons/fa/FaUser.svelte'
 
   const buttons = [
-    { uri: '/dashboard', icon: FaBriefcase, description: 'Jobs for You' },
+    { uri: '/jobs', icon: FaBriefcase, description: 'Jobs for You' },
     { uri: '/applications', icon: FaBookOpen, description: 'Your Applications' },
     { uri: '/profile', icon: FaUser, description: 'Edit your profile'}
   ]
